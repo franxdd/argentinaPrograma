@@ -1,0 +1,221 @@
+.newtons-cradle {
+  --uib-size: 50px;
+  --uib-speed: 1.2s;
+  --uib-color: #474554;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--uib-size);
+  height: var(--uib-size);
+}
+
+.newtons-cradle__dot {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 25%;
+  transform-origin: center top;
+}
+
+.newtons-cradle__dot::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 25%;
+  border-radius: 50%;
+  background-color: var(--uib-color);
+}
+
+.newtons-cradle__dot:first-child {
+  animation: swing var(--uib-speed) linear infinite;
+}
+
+.newtons-cradle__dot:last-child {
+  animation: swing2 var(--uib-speed) linear infinite;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+    animation-timing-function: ease-out;
+  }
+
+  25% {
+    transform: rotate(70deg);
+    animation-timing-function: ease-in;
+  }
+
+  50% {
+    transform: rotate(0deg);
+    animation-timing-function: linear;
+  }
+}
+
+@keyframes swing2 {
+  0% {
+    transform: rotate(0deg);
+    animation-timing-function: linear;
+  }
+
+  50% {
+    transform: rotate(0deg);
+    animation-timing-function: ease-out;
+  }
+
+  75% {
+    transform: rotate(-70deg);
+    animation-timing-function: ease-in;
+  }
+}
+.home {
+  font-size: larger;
+}
+.divFoto2 {
+  display: none;
+}
+.contactoRes {
+  display: none;
+}
+.skillsRes {
+  display: none;
+}
+.nombre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 15%;
+  width: 30%;
+  margin-left: 37.5%;
+}
+.perfil {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+.foto {
+  margin-left: 4rem;
+  display: flex;
+  width: 18.3%;
+  height: 0;
+  margin-top: 2rem;
+  flex-direction: column;
+}
+.borde {
+  border: solid 1px rgb(158, 140, 171);
+  background-color: white;
+}
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* position: relative;
+  width: 50%;
+  left: 46.5%; */
+}
+.contacto {
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.2rem;
+  font-size: 1.5rem;
+}
+.icons {
+  display: flex;
+  padding: 0;
+}
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4px;
+}
+.skills {
+  margin-left: 0.5rem;
+}
+.sobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactUl {
+  list-style: none;
+  padding: 0%;
+}
+.contacH3 {
+  margin: 0%;
+}
+h1 {
+  margin: 0%;
+}
+h2 {
+  margin: 0%;
+}
+h4 {
+  margin: 0%;
+}
+ul {
+  padding-left: 20px;
+}
+
+@media (max-width: 412px) {
+  .foto {
+    display: none;
+  }
+  h2 {
+    margin: 2%;
+  }
+  .divFoto2 {
+    display: flex;
+    /* position: relative;
+    height: 180px;
+    width: 180px;
+    left: 50%;
+    bottom: 10rem; */
+  }
+  .mediaFoto {
+    display: flex;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+  }
+  .nombre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 5%;
+    margin-top: 12%;
+    margin-left: 0%;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .experience {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0.2rem;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+  .contactoRes {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px rgb(158, 140, 171);
+    background-color: white;
+  }
+  .skillsRes {
+    display: flex;
+    flex-direction: column;
+    height: 10%;
+    align-items: center;
+  }
+  .icons {
+    margin: 0%;
+  }
+  .h3respons {
+    margin: 0%;
+  }
+}
