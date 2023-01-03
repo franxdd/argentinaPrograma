@@ -46,8 +46,8 @@
 
 ## :dart: About ##
 
-Proyecto final integrador en el cual se utilizo Axios para hacer las peticiones http, utilizando redux para crear un estado glocal y poder subcribir el componente.
-Utilizando CSS se dio forma y se hizo una version responsive a 412px
+Proyecto final integrador el cual consiste en un Curriculum vitae con datos ficticios, en el cual se utilizo Axios para hacer las peticiones http de la API proporcionada, utilizando redux para crear un estado global y poder subcribir el componente.
+Utilizando CSS se dio forma y se hizo una version responsive a 412px.
 
 
 ## :rocket: Technologies ##
